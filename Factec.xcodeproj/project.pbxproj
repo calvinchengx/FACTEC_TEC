@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5337D7C427D66F9E00867343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C327D66F9E00867343 /* AppDelegate.swift */; };
+		5337D7C627D66F9E00867343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C527D66F9E00867343 /* SceneDelegate.swift */; };
+		5337D7C827D66F9E00867343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C727D66F9E00867343 /* ViewController.swift */; };
+		5337D7CB27D66F9E00867343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337D7C927D66F9E00867343 /* Main.storyboard */; };
+		5337D7CD27D66F9F00867343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5337D7CC27D66F9F00867343 /* Assets.xcassets */; };
+		5337D7D027D66F9F00867343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337D7CE27D66F9F00867343 /* LaunchScreen.storyboard */; };
+		5337D7DB27D66F9F00867343 /* FactecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7DA27D66F9F00867343 /* FactecTests.swift */; };
+		5337D7E527D66F9F00867343 /* FactecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7E427D66F9F00867343 /* FactecUITests.swift */; };
+		5337D7E727D66F9F00867343 /* FactecUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7E627D66F9F00867343 /* FactecUITestsLaunchTests.swift */; };
+		5337D80827D6749000867343 /* LivenessCheckProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7FC27D6749000867343 /* LivenessCheckProcessor.swift */; };
+		5337D80927D6749000867343 /* ProcesingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7FD27D6749000867343 /* ProcesingDelegate.swift */; };
+		5337D80A27D6749000867343 /* AuthenticateProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7FE27D6749000867343 /* AuthenticateProcessor.swift */; };
+		5337D80C27D6749000867343 /* EnrollmentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D80027D6749000867343 /* EnrollmentProcessor.swift */; };
+		5337D80E27D6749000867343 /* PhotoIDScanProcessor_min_no_networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D80427D6749000867343 /* PhotoIDScanProcessor_min_no_networking.swift */; };
+		5337D80F27D6749000867343 /* EnrollmentProcessor_min_no_networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D80527D6749000867343 /* EnrollmentProcessor_min_no_networking.swift */; };
+		5337D81027D6749000867343 /* AuthenticateProcessor_min_no_networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D80627D6749000867343 /* AuthenticateProcessor_min_no_networking.swift */; };
+		5337D81127D6749000867343 /* LivenessCheckProcessor_min_no_networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D80727D6749000867343 /* LivenessCheckProcessor_min_no_networking.swift */; };
+		5337D81327D674E400867343 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D81227D674E400867343 /* Config.swift */; };
+		53FBB09427D67F2500BA9C72 /* FaceTecSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337D81627D6780000867343 /* FaceTecSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5337D7D727D66F9F00867343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5337D7B827D66F9E00867343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5337D7BF27D66F9E00867343;
+			remoteInfo = Factec;
+		};
+		5337D7E127D66F9F00867343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5337D7B827D66F9E00867343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5337D7BF27D66F9E00867343;
+			remoteInfo = Factec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5337D7C027D66F9E00867343 /* Factec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5337D7C327D66F9E00867343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5337D7C527D66F9E00867343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5337D7C727D66F9E00867343 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5337D7CA27D66F9E00867343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5337D7CC27D66F9F00867343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5337D7CF27D66F9F00867343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5337D7D127D66F9F00867343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5337D7D627D66F9F00867343 /* FactecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5337D7DA27D66F9F00867343 /* FactecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactecTests.swift; sourceTree = "<group>"; };
+		5337D7E027D66F9F00867343 /* FactecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5337D7E427D66F9F00867343 /* FactecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactecUITests.swift; sourceTree = "<group>"; };
+		5337D7E627D66F9F00867343 /* FactecUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactecUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5337D7FC27D6749000867343 /* LivenessCheckProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivenessCheckProcessor.swift; sourceTree = "<group>"; };
+		5337D7FD27D6749000867343 /* ProcesingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcesingDelegate.swift; sourceTree = "<group>"; };
+		5337D7FE27D6749000867343 /* AuthenticateProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateProcessor.swift; sourceTree = "<group>"; };
+		5337D80027D6749000867343 /* EnrollmentProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollmentProcessor.swift; sourceTree = "<group>"; };
+		5337D80427D6749000867343 /* PhotoIDScanProcessor_min_no_networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoIDScanProcessor_min_no_networking.swift; sourceTree = "<group>"; };
+		5337D80527D6749000867343 /* EnrollmentProcessor_min_no_networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollmentProcessor_min_no_networking.swift; sourceTree = "<group>"; };
+		5337D80627D6749000867343 /* AuthenticateProcessor_min_no_networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateProcessor_min_no_networking.swift; sourceTree = "<group>"; };
+		5337D80727D6749000867343 /* LivenessCheckProcessor_min_no_networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivenessCheckProcessor_min_no_networking.swift; sourceTree = "<group>"; };
+		5337D81227D674E400867343 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		5337D81627D6780000867343 /* FaceTecSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FaceTecSDK.framework; sourceTree = "<group>"; };
+		53FBB09127D67E9C00BA9C72 /* FaceTecSDK 12.24.15 AM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "FaceTecSDK 12.24.15 AM.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5337D7BD27D66F9E00867343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FBB09427D67F2500BA9C72 /* FaceTecSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7D327D66F9F00867343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7DD27D66F9F00867343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5337D7B727D66F9E00867343 = {
+			isa = PBXGroup;
+			children = (
+				5337D7C227D66F9E00867343 /* Factec */,
+				5337D7D927D66F9F00867343 /* FactecTests */,
+				5337D7E327D66F9F00867343 /* FactecUITests */,
+				5337D7C127D66F9E00867343 /* Products */,
+				5337D81427D677C600867343 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5337D7C127D66F9E00867343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5337D7C027D66F9E00867343 /* Factec.app */,
+				5337D7D627D66F9F00867343 /* FactecTests.xctest */,
+				5337D7E027D66F9F00867343 /* FactecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5337D7C227D66F9E00867343 /* Factec */ = {
+			isa = PBXGroup;
+			children = (
+				5337D81227D674E400867343 /* Config.swift */,
+				5337D7FB27D6749000867343 /* Processors */,
+				5337D80327D6749000867343 /* Processors_min_no_networking */,
+				5337D7C327D66F9E00867343 /* AppDelegate.swift */,
+				5337D7C527D66F9E00867343 /* SceneDelegate.swift */,
+				5337D7C727D66F9E00867343 /* ViewController.swift */,
+				5337D7C927D66F9E00867343 /* Main.storyboard */,
+				5337D7CC27D66F9F00867343 /* Assets.xcassets */,
+				5337D7CE27D66F9F00867343 /* LaunchScreen.storyboard */,
+				5337D7D127D66F9F00867343 /* Info.plist */,
+			);
+			path = Factec;
+			sourceTree = "<group>";
+		};
+		5337D7D927D66F9F00867343 /* FactecTests */ = {
+			isa = PBXGroup;
+			children = (
+				5337D7DA27D66F9F00867343 /* FactecTests.swift */,
+			);
+			path = FactecTests;
+			sourceTree = "<group>";
+		};
+		5337D7E327D66F9F00867343 /* FactecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5337D7E427D66F9F00867343 /* FactecUITests.swift */,
+				5337D7E627D66F9F00867343 /* FactecUITestsLaunchTests.swift */,
+			);
+			path = FactecUITests;
+			sourceTree = "<group>";
+		};
+		5337D7FB27D6749000867343 /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				5337D7FC27D6749000867343 /* LivenessCheckProcessor.swift */,
+				5337D7FD27D6749000867343 /* ProcesingDelegate.swift */,
+				5337D7FE27D6749000867343 /* AuthenticateProcessor.swift */,
+				5337D80027D6749000867343 /* EnrollmentProcessor.swift */,
+			);
+			path = Processors;
+			sourceTree = "<group>";
+		};
+		5337D80327D6749000867343 /* Processors_min_no_networking */ = {
+			isa = PBXGroup;
+			children = (
+				5337D80427D6749000867343 /* PhotoIDScanProcessor_min_no_networking.swift */,
+				5337D80527D6749000867343 /* EnrollmentProcessor_min_no_networking.swift */,
+				5337D80627D6749000867343 /* AuthenticateProcessor_min_no_networking.swift */,
+				5337D80727D6749000867343 /* LivenessCheckProcessor_min_no_networking.swift */,
+			);
+			path = Processors_min_no_networking;
+			sourceTree = "<group>";
+		};
+		5337D81427D677C600867343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53FBB09127D67E9C00BA9C72 /* FaceTecSDK 12.24.15 AM.framework */,
+				5337D81627D6780000867343 /* FaceTecSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5337D7BF27D66F9E00867343 /* Factec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5337D7EA27D66F9F00867343 /* Build configuration list for PBXNativeTarget "Factec" */;
+			buildPhases = (
+				5337D7BC27D66F9E00867343 /* Sources */,
+				5337D7BD27D66F9E00867343 /* Frameworks */,
+				5337D7BE27D66F9E00867343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Factec;
+			productName = Factec;
+			productReference = 5337D7C027D66F9E00867343 /* Factec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5337D7D527D66F9F00867343 /* FactecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5337D7ED27D66F9F00867343 /* Build configuration list for PBXNativeTarget "FactecTests" */;
+			buildPhases = (
+				5337D7D227D66F9F00867343 /* Sources */,
+				5337D7D327D66F9F00867343 /* Frameworks */,
+				5337D7D427D66F9F00867343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5337D7D827D66F9F00867343 /* PBXTargetDependency */,
+			);
+			name = FactecTests;
+			productName = FactecTests;
+			productReference = 5337D7D627D66F9F00867343 /* FactecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5337D7DF27D66F9F00867343 /* FactecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5337D7F027D66F9F00867343 /* Build configuration list for PBXNativeTarget "FactecUITests" */;
+			buildPhases = (
+				5337D7DC27D66F9F00867343 /* Sources */,
+				5337D7DD27D66F9F00867343 /* Frameworks */,
+				5337D7DE27D66F9F00867343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5337D7E227D66F9F00867343 /* PBXTargetDependency */,
+			);
+			name = FactecUITests;
+			productName = FactecUITests;
+			productReference = 5337D7E027D66F9F00867343 /* FactecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5337D7B827D66F9E00867343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5337D7BF27D66F9E00867343 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5337D7D527D66F9F00867343 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5337D7BF27D66F9E00867343;
+					};
+					5337D7DF27D66F9F00867343 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 5337D7BF27D66F9E00867343;
+					};
+				};
+			};
+			buildConfigurationList = 5337D7BB27D66F9E00867343 /* Build configuration list for PBXProject "Factec" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5337D7B727D66F9E00867343;
+			productRefGroup = 5337D7C127D66F9E00867343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5337D7BF27D66F9E00867343 /* Factec */,
+				5337D7D527D66F9F00867343 /* FactecTests */,
+				5337D7DF27D66F9F00867343 /* FactecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5337D7BE27D66F9E00867343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5337D7D027D66F9F00867343 /* LaunchScreen.storyboard in Resources */,
+				5337D7CD27D66F9F00867343 /* Assets.xcassets in Resources */,
+				5337D7CB27D66F9E00867343 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7D427D66F9F00867343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7DE27D66F9F00867343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5337D7BC27D66F9E00867343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5337D7C827D66F9E00867343 /* ViewController.swift in Sources */,
+				5337D7C427D66F9E00867343 /* AppDelegate.swift in Sources */,
+				5337D80827D6749000867343 /* LivenessCheckProcessor.swift in Sources */,
+				5337D81327D674E400867343 /* Config.swift in Sources */,
+				5337D80E27D6749000867343 /* PhotoIDScanProcessor_min_no_networking.swift in Sources */,
+				5337D80A27D6749000867343 /* AuthenticateProcessor.swift in Sources */,
+				5337D81027D6749000867343 /* AuthenticateProcessor_min_no_networking.swift in Sources */,
+				5337D80C27D6749000867343 /* EnrollmentProcessor.swift in Sources */,
+				5337D80927D6749000867343 /* ProcesingDelegate.swift in Sources */,
+				5337D81127D6749000867343 /* LivenessCheckProcessor_min_no_networking.swift in Sources */,
+				5337D7C627D66F9E00867343 /* SceneDelegate.swift in Sources */,
+				5337D80F27D6749000867343 /* EnrollmentProcessor_min_no_networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7D227D66F9F00867343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5337D7DB27D66F9F00867343 /* FactecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5337D7DC27D66F9F00867343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5337D7E727D66F9F00867343 /* FactecUITestsLaunchTests.swift in Sources */,
+				5337D7E527D66F9F00867343 /* FactecUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5337D7D827D66F9F00867343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5337D7BF27D66F9E00867343 /* Factec */;
+			targetProxy = 5337D7D727D66F9F00867343 /* PBXContainerItemProxy */;
+		};
+		5337D7E227D66F9F00867343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5337D7BF27D66F9E00867343 /* Factec */;
+			targetProxy = 5337D7E127D66F9F00867343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5337D7C927D66F9E00867343 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5337D7CA27D66F9E00867343 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5337D7CE27D66F9F00867343 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5337D7CF27D66F9F00867343 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5337D7E827D66F9F00867343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5337D7E927D66F9F00867343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5337D7EB27D66F9F00867343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Factec/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.Factec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5337D7EC27D66F9F00867343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Factec/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.Factec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5337D7EE27D66F9F00867343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.FactecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Factec.app/Factec";
+			};
+			name = Debug;
+		};
+		5337D7EF27D66F9F00867343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.FactecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Factec.app/Factec";
+			};
+			name = Release;
+		};
+		5337D7F127D66F9F00867343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.FactecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factec;
+			};
+			name = Debug;
+		};
+		5337D7F227D66F9F00867343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4S9UQTSVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nuradev.FactecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factec;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5337D7BB27D66F9E00867343 /* Build configuration list for PBXProject "Factec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5337D7E827D66F9F00867343 /* Debug */,
+				5337D7E927D66F9F00867343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5337D7EA27D66F9F00867343 /* Build configuration list for PBXNativeTarget "Factec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5337D7EB27D66F9F00867343 /* Debug */,
+				5337D7EC27D66F9F00867343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5337D7ED27D66F9F00867343 /* Build configuration list for PBXNativeTarget "FactecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5337D7EE27D66F9F00867343 /* Debug */,
+				5337D7EF27D66F9F00867343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5337D7F027D66F9F00867343 /* Build configuration list for PBXNativeTarget "FactecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5337D7F127D66F9F00867343 /* Debug */,
+				5337D7F227D66F9F00867343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5337D7B827D66F9E00867343 /* Project object */;
+}
