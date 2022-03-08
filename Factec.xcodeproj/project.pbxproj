@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7895D927D76EE4001FEAEF /* FaceTecSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5337D81627D6780000867343 /* FaceTecSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5337D7C427D66F9E00867343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C327D66F9E00867343 /* AppDelegate.swift */; };
 		5337D7C627D66F9E00867343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C527D66F9E00867343 /* SceneDelegate.swift */; };
 		5337D7C827D66F9E00867343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D7C727D66F9E00867343 /* ViewController.swift */; };
@@ -44,6 +45,20 @@
 			remoteInfo = Factec;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E7895D827D76EC9001FEAEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3E7895D927D76EE4001FEAEF /* FaceTecSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5337D7C027D66F9E00867343 /* Factec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factec.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +209,8 @@
 				5337D7BC27D66F9E00867343 /* Sources */,
 				5337D7BD27D66F9E00867343 /* Frameworks */,
 				5337D7BE27D66F9E00867343 /* Resources */,
+				3E7895D827D76EC9001FEAEF /* Embed Frameworks */,
+				3E7895DA27D76EED001FEAEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +326,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E7895DA27D76EED001FEAEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceTecSDK.framework/strip-unused-architectures-from-target.sh\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5337D7BC27D66F9E00867343 /* Sources */ = {
